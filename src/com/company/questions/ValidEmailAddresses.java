@@ -1,6 +1,5 @@
 package com.company.questions;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class ValidEmailAddresses {
 
     public static void main(String[] args) {
         for (String address : addresses) {
-            System.out.println(address.matches("[a-z]{1,6}_?[0-9]{0,4}(.*)@hackerrank.com"));
+            System.out.println(address.matches("[a-z]{1,6}_[0-9]{0,4}?(.*)@hackerrank.com"));
         }
     }
 }
