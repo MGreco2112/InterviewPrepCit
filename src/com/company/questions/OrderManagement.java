@@ -14,4 +14,11 @@ public class OrderManagement {
 //	WHEN COUNT(name) > 1 THEN name
 //    ELSE id
 //    END);
+
+    //Third and Closest Attempt Yet
+//    SELECT id, name FROM customer_credit GROUP BY name ORDER BY CASE
+//	WHEN COUNT(name) > 1 THEN id
+//    ELSE name
+//    END
+//    ;
 }
