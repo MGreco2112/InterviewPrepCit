@@ -7,4 +7,11 @@ public class OrderManagement {
 //-- 	(SELECT id, name FROM customer_credit GROUP BY name HAVING COUNT(name) > 1 ORDER BY id ASC)
 //--     TEMP ON customer.name = TEMP.name
 //-- ORDER BY name DESC;
+
+    //Attempt 2
+//    SELECT id, name from customer_credit ORDER BY
+//	(CASE
+//	WHEN COUNT(name) > 1 THEN name
+//    ELSE id
+//    END);
 }
