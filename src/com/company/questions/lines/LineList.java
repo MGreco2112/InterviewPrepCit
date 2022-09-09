@@ -1,5 +1,7 @@
 package com.company.questions.lines;
 
+import java.util.List;
+import java.util.Objects;
 import java.util.Vector;
 
 public class LineList implements LineListInterface{
@@ -19,11 +21,29 @@ public class LineList implements LineListInterface{
 
     @Override
     public Line getLineWithMaxLength() {
-        return null;
+        Line output = null;
+        int maxLength = 0;
+
+        for (Line line : list_of_lines) {
+            if (line.getPoints().size() > maxLength) {
+                maxLength = line.getPoints().size();
+                output = line;
+            }
+        }
+
+        return output;
     }
 
     @Override
     public Vector<Line> getLinesStartingWithPoint(Point p) {
-        return null;
+        Vector<Line> output = new Vector<>();
+
+        for (Line line : list_of_lines) {
+            if (Objects.equals(line.getPoints().get(0).getData(), p.getData())) {
+                output.add(line);
+            }
+        }
+
+        return output;
     }
 }
