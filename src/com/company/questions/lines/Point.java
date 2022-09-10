@@ -1,5 +1,5 @@
 package com.company.questions.lines;
-
+//refactor to X and Y coordinates
 public class Point {
     private Integer data;
 
