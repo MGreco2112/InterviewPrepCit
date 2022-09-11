@@ -25,9 +25,8 @@ public class LineList implements LineListInterface{
 
         for (Line line : list_of_lines) {
             double currentLength = Math.sqrt(
-                    line.getHead().getxAxis() - line.getEnd().getxAxis() * 2
-                    +
-                    line.getHead().getyAxis() - line.getEnd().getyAxis() * 2
+                    (Math.abs(line.getHead().getxAxis() - line.getEnd().getxAxis())) * 2
+                    + (Math.abs(line.getHead().getyAxis() - line.getEnd().getyAxis())) * 2
             );
 
             if (currentLength > maxLength) {

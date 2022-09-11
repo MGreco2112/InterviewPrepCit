@@ -24,4 +24,9 @@ public class Point {
     public void setyAxis(Integer yAxis) {
         this.yAxis = yAxis;
     }
+
+    @Override
+    public String toString() {
+        return "(" + xAxis + ", " + yAxis + ")";
+    }
 }

@@ -26,4 +26,9 @@ public class Line {
     public void setEnd(Point end) {
         this.end = end;
     }
+
+    @Override
+    public String toString() {
+        return head + ", " + end;
+    }
 }
