@@ -20,17 +20,9 @@ public class LineList implements LineListInterface{
 
     @Override
     public Line getLineWithMaxLength() {
-        Line output = null;
-        int maxLength = 0;
+        //TODO research how to determine length of line formula
 
-        for (Line line : list_of_lines) {
-            if (line.getPoints().size() > maxLength) {
-                maxLength = line.getPoints().size();
-                output = line;
-            }
-        }
-
-        return output;
+        return null;
     }
 
     @Override
@@ -38,7 +30,10 @@ public class LineList implements LineListInterface{
         Vector<Line> output = new Vector<>();
 
         for (Line line : list_of_lines) {
-            if (Objects.equals(line.getPoints().get(0).getData(), p.getData())) {
+            int x_axis = line.getHead().getX_Axis();
+            int y_axis = line.getHead().getY_Axis();
+
+            if (Objects.equals(x_axis, p.getX_Axis()) && Objects.equals(y_axis, p.getY_Axis())) {
                 output.add(line);
             }
         }

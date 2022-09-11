@@ -3,17 +3,27 @@ package com.company.questions.lines;
 import java.util.List;
 //research wat as Vector is and how to utilize it as a line in a coordinate plane
 public class Line {
-    List<Point> points;
+    private Point head;
+    private Point end;
 
-    public Line(List<Point> points) {
-        this.points = points;
+    public Line(Point head, Point end) {
+        this.head = head;
+        this.end = end;
     }
 
-    public List<Point> getPoints() {
-        return points;
+    public Point getHead() {
+        return head;
     }
 
-    public void setPoints(List<Point> points) {
-        this.points = points;
+    public void setHead(Point head) {
+        this.head = head;
+    }
+
+    public Point getEnd() {
+        return end;
+    }
+
+    public void setEnd(Point end) {
+        this.end = end;
     }
 }
