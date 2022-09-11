@@ -1,27 +1,27 @@
 package com.company.questions.lines;
 //refactor to X and Y coordinates
 public class Point {
-    private Integer X_Axis;
-    private Integer Y_Axis;
+    private Integer xAxis;
+    private Integer yAxis;
 
     public Point(Integer x_Axis, Integer y_Axis) {
-        X_Axis = x_Axis;
-        Y_Axis = y_Axis;
+        xAxis = x_Axis;
+        yAxis = y_Axis;
     }
 
-    public Integer getX_Axis() {
-        return X_Axis;
+    public Integer getxAxis() {
+        return xAxis;
     }
 
-    public void setX_Axis(Integer x_Axis) {
-        X_Axis = x_Axis;
+    public void setxAxis(Integer xAxis) {
+        this.xAxis = xAxis;
     }
 
-    public Integer getY_Axis() {
-        return Y_Axis;
+    public Integer getyAxis() {
+        return yAxis;
     }
 
-    public void setY_Axis(Integer y_Axis) {
-        Y_Axis = y_Axis;
+    public void setyAxis(Integer yAxis) {
+        this.yAxis = yAxis;
     }
 }

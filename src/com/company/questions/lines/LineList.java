@@ -25,9 +25,9 @@ public class LineList implements LineListInterface{
 
         for (Line line : list_of_lines) {
             double currentLength = Math.sqrt(
-                    line.getHead().getX_Axis() - line.getEnd().getX_Axis() * 2
+                    line.getHead().getxAxis() - line.getEnd().getxAxis() * 2
                     +
-                    line.getHead().getY_Axis() - line.getEnd().getY_Axis() * 2
+                    line.getHead().getyAxis() - line.getEnd().getyAxis() * 2
             );
 
             if (currentLength > maxLength) {
@@ -44,10 +44,10 @@ public class LineList implements LineListInterface{
         Vector<Line> output = new Vector<>();
 
         for (Line line : list_of_lines) {
-            int x_axis = line.getHead().getX_Axis();
-            int y_axis = line.getHead().getY_Axis();
+            int x_axis = line.getHead().getxAxis();
+            int y_axis = line.getHead().getyAxis();
 
-            if (Objects.equals(x_axis, p.getX_Axis()) && Objects.equals(y_axis, p.getY_Axis())) {
+            if (Objects.equals(x_axis, p.getxAxis()) && Objects.equals(y_axis, p.getyAxis())) {
                 output.add(line);
             }
         }
