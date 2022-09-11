@@ -20,9 +20,23 @@ public class LineList implements LineListInterface{
 
     @Override
     public Line getLineWithMaxLength() {
-        //TODO research how to determine length of line formula
+        Line maxLine = null;
+        double maxLength = 0L;
 
-        return null;
+        for (Line line : list_of_lines) {
+            double currentLength = Math.sqrt(
+                    line.getHead().getX_Axis() - line.getEnd().getX_Axis() * 2
+                    +
+                    line.getHead().getY_Axis() - line.getEnd().getY_Axis() * 2
+            );
+
+            if (currentLength > maxLength) {
+                maxLine = line;
+                maxLength = currentLength;
+            }
+        }
+
+        return maxLine;
     }
 
     @Override
