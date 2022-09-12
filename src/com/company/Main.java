@@ -45,9 +45,9 @@ public class Main {
                 + ") , (" + longestLine.getEnd().getxAxis() + " , " + longestLine.getEnd().getyAxis() + ")"
         );
         System.out.println("Length: " + Math.sqrt(
-                ((Math.abs(longestLine.getHead().getxAxis() - longestLine.getEnd().getxAxis())) * 2)
+                ((Math.abs(Math.pow(longestLine.getHead().getxAxis() - longestLine.getEnd().getxAxis(), 2))))
                         +
-                        ((Math.abs(longestLine.getHead().getyAxis() - longestLine.getEnd().getyAxis())) * 2)
+                        ((Math.abs(Math.pow(longestLine.getHead().getyAxis() - longestLine.getEnd().getyAxis(), 2))))
         ));
         System.out.println("All the lines starting from Point (" + startingPoint.getxAxis() + ", " + startingPoint.getyAxis() + ")");
 
