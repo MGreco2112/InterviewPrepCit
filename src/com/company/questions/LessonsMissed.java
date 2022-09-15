@@ -39,4 +39,16 @@ public class LessonsMissed {
     public static void main(String[] args) {
         System.out.println(lessons(2, 10, 12));
     }
+
+    //solution located online, will research
+    //public static int missedLectures(int numChapters,int b,int e)
+    //	{
+    //		return Math.min(e-b+1,numChapters);
+    //	}
+    //	public static void main(String[] args)
+    //	{
+    //		System.out.println(missedLectures(5,5,6));//2
+    //		System.out.println(missedLectures(4,3,5));//3
+    //
+    //	}
 }
