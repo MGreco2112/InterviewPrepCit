@@ -23,4 +23,6 @@ public class MissedAssignmentSQL_Query {
     //  where backlog.SUBJECT_ID is not NULL
     //)
     //order by NAME asc;
+
+    //this should function correctly, despite the documentation being different and missing content for the problem
 }
